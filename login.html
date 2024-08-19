@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login e Registro</title>
-    <link rel="stylesheet" href="styles/login.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles\login.css">
 </head>
 <body>
     <div class="container">
-        <!-- Tela de Login -->
         <div class="form-container">
             <h2>Login</h2>
             <form action="/login" method="post">
@@ -16,21 +15,5 @@
                 <input type="password" name="password" placeholder="Senha" required>
                 <input type="submit" value="Entrar">
             </form>
-            <a href="#register">Ainda não tem uma conta? Registre-se</a>
+            <a href="login2.html">Ainda não tem uma conta? Registre-se</a>
         </div>
-
-        <!-- Tela de Registro -->
-        <div class="form-container" id="register">
-            <h2>Registro</h2>
-            <form action="/register" method="post">
-                <input type="text" name="username" placeholder="Usuário" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="password" name="password" placeholder="Senha" required>
-                <input type="password" name="confirm_password" placeholder="Confirmar Senha" required>
-                <input type="submit" value="Registrar">
-            </form>
-            <a href="#login">Já tem uma conta? Faça login</a>
-        </div>
-    </div>
-</body>
-</html>
